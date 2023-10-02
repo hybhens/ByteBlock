@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ByteBlock</title>
+  <script src="blockly/blockly_compressed.js"></script>
+  <script src="blockly/blocks_compressed.js"></script>
+  <script src="blockly/javascript_compressed.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+
+  <h1>ByteBlock</h1>
+  <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+  <button onclick="generateByteBeat()">Generate ByteBeat</button>
+  <audio id="audio" controls></audio>
+
+  <xml id="toolbox" style="display: none">
+    <category name="Math">
+      <block type="math_number"></block>
+      <block type="math_arithmetic"></block>
+    </category>
+    <category name="Bitwise">
+      <block type="bitwise_operations"></block>
+    </category>
+    <category name="Variables">
+      <block type="variables_get">
+        <field name="VAR">t</field>
+      </block>
+    </category>
+  </xml>
+
+</body>
+</html>
